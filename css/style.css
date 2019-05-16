@@ -1,0 +1,295 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* Droid Serif - italic - latin */
+  @font-face {
+    font-family: 'droid_serifitalic';
+    src: 
+         url('../fonts/DroidSerif-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: 400;
+}
+
+
+:root {
+    --col: 95px;
+    --main: black;
+    --accent: #fed136;
+    --font-m: "Montserrat", sans-serif;
+    --font-d: "Droid Serif", serif;
+    --font-r: "Roboto Slab", serif;
+    --radius: 74%;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 50px 0 125px;
+}
+
+.nav-header {
+    display: flex;
+}
+
+.menu {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-m);
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.menu-link {
+    color: var(--main);
+    text-align: center;
+}
+
+.menu-link:hover {
+    color: var(--accent);
+}
+.serv-title {
+    color: var(--menu);    
+    text-align: center; 
+    font-size: 40px;
+    font-family: var(--font-m);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-family: var(--font-d);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 50px 0 190px;
+}
+
+.service:hover {
+    opacity: 0.5;
+}
+
+.text {
+    text-align: center;
+}
+.service-title {
+    font-size: 18px;
+    font-family: var(--font-m);
+    margin: 18px;
+    font-weight: bold;
+}
+
+.service-text {
+    font-size: 14px;
+    font-family: var(--font-r);
+    color: rgb(119, 119, 119);
+}
+
+.col-3 {
+    width: calc(var(--col) * 3);
+}
+
+.service-icon-wrp {
+    text-align: center;
+}
+
+.service-icon-wrp {
+    border: 3px solid var(--accent);
+    border-radius: var(--radius);
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon-wrp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.icon {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.black {
+    background-color: black;
+    margin: 25px 0;
+    position: relative;
+}
+
+.img-background {
+    
+    background-image: url("../image/map.png");
+    width: 614px;
+    height: 537px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    max-width: 940px;
+    z-index: 4;
+}
+
+.contact-title {
+    color: white;   
+    text-align: center; 
+    font-size: 40px;
+    font-family: var(--font-m);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 0 0 0;
+}
+
+.container-contact {
+    max-width: 940px;
+    margin: auto;
+}
+
+.contact-form {
+    padding: 75px 0;
+}
+
+.contact-form-wrp {
+    display: flex;
+}
+
+.contact-textarea-wrp {
+    width: 455px;
+}
+
+.contact-input,
+.contact-textarea {
+  box-sizing: border-box;
+  margin: 14px 0;
+  width: 455px;
+  outline: 4px solid transparent;
+  outline-offset: -2px;
+  transition: outline-color 0.1s;
+}
+
+.contact-inputs {
+    float: left;
+}
+.contact-input {
+    border-radius:3px;
+    padding: 0 20px;
+    height: 52px;
+    border: none;
+}
+
+.contact-textarea {
+    border-radius: 4px;
+    padding: 18px 20px;
+    height: calc(52px*3 + 14px*4);
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    font-size: 14px;
+    font-family: var(--font-m);
+    color: #bbb;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-textarea::placeholder {
+    line-height: 1;
+}
+
+.contact-submit {
+    border-radius: 3px;
+    background-color: var(--accent);
+    width: 240px;
+    height: 66px;
+    font-size: 18px;
+    font-family: var(--font-m);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+
+.contact-submit:hover {
+    transform: scale(1.05);
+}
+
+input[type="email"]:focus:invalid,
+textarea[name="body"]:focus:invalid,
+input[name="name"]:focus:invalid {
+  outline-color: red;
+  transition: outline-color 5s;
+}
+
+input[type="email"]:focus:valid,
+textarea[name="body"]:focus:valid,
+input[name="name"]:focus:valid {
+  outline-color: green;
+  transition: outline-color .4s;
+}
+
